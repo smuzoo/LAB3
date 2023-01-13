@@ -1,5 +1,8 @@
 package people;
 
+import enums.*;
+
+
 import java.util.Objects;
 
 public abstract class Person {
