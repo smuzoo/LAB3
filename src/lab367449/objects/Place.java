@@ -1,4 +1,4 @@
-package objects;
+package lab367449.objects;
 
 public enum Place {
     Closet("каморку"),

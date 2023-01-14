@@ -1,10 +1,11 @@
-package objects;
+package lab367449.objects;
 
-import enums.*;
-import interfaces.*;
+import lab367449.enums.*;
+import lab367449.interfaces.*;
 
 
-public abstract class Thing implements IAdv{
+
+public class Thing extends Anything implements IAdv{
     public Condition condition;
     public String name;
     public Place place;
