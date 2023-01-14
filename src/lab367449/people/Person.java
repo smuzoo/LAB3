@@ -1,22 +1,18 @@
 package lab367449.people;
 
-import lab367449.enums.*;
-import lab367449.Anyting;
-
-
-import java.util.Objects;
-
-public class Person extends Anyting {
-    public String name;
-
+public abstract class Person {
+    protected String name;
     public Person(String name){
-        super(name);
-
+        this.name = name;
+    }
+    public abstract void describe();
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return this.name;
     }
 
-    @Override
-    public void describe() {
 
-    }
 
 }

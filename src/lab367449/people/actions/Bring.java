@@ -1,6 +1,6 @@
-package people.actions;
+package lab367449.people.actions;
 
-import people.Person;
+import lab367449.people.Person;
 
 public interface Bring {
 }

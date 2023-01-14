@@ -3,10 +3,10 @@ package lab367449.enums;
 public enum Time {
 
 
-    Dinner ("За ужином"),
-    Evening("Вечером"),
-    Now("Теперь"),
-    BeforeGoingToBed("перед сном");
+    DINNER ("За ужином"),
+    EVENING("Вечером"),
+    NOW("Теперь"),
+    BEFOREGOINGTOBED("перед сном");
 
     public String name;
     Time(String name){

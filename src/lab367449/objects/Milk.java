@@ -1,12 +1,17 @@
 package lab367449.objects;
 
-import enums.*;
+import lab367449.enums.*;
 
 
-public class Milk extends Thing {
+public class Milk extends Anything {
 
 
     public Milk() {
-        super( "молоко",
+        super( "молоко");
+    }
+
+    @Override
+    public void describe() {
+
     }
 }

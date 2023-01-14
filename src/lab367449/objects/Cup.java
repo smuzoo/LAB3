@@ -1,10 +1,16 @@
 package lab367449.objects;
 
-public class Cup extends Thing {
+public class Cup extends Anything {
 
 
 
     public Cup() {
-        super("чашка", );
+        super("чашку" );
+    }
+
+
+    @Override
+    public void describe() {
+
     }
 }
