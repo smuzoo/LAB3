@@ -4,9 +4,11 @@ public enum Time {
 
 
     DINNER ("За ужином"),
-    EVENING("Вечером"),
+    EVENING("вечером"),
     NOW("Теперь"),
+    INTHEDAYTIME("днем"),
     BEFOREGOINGTOBED("перед сном");
+
 
     public String name;
     Time(String name){

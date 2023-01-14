@@ -9,4 +9,8 @@ public class Evening extends Anything {
         this.condition = condition;
     }
 
+    @Override
+    public void describe() {
+
+    }
 }

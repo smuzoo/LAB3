@@ -1,13 +1,12 @@
 package lab367449.enums;
 
-public enum Things {
-    SMELL("запаха"),
-    CUPOFMILK("чашку молока");
-
-
+public enum Adjectives {
+    STRANGE("странный"),
+    BLIND ("незрячей"),
+    BITTER("горький");
     private String name;
 
-     Things(String name) {
+    Adjectives(String name) {
         this.name = name;
     }
 
@@ -19,4 +18,3 @@ public enum Things {
         return this.name;
     }
 }
-

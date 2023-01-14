@@ -16,9 +16,6 @@ public abstract class Anything implements Adverb {
     }
 
 
-    public void describe(){
-
-        System.out.println(out);
-    }
+    public abstract void describe();
 
 }

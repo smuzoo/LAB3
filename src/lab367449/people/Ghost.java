@@ -11,12 +11,16 @@ public class Ghost  extends Person implements DirectSpeech {
     }
 
     public void bring (Things thing, DeterminativePronouns frequency, Time when, Time where){
-        out = frequency.getName() + " " + when.getName() + " " + where.getName() + " " + this.name +" приносит "+  thing.getName();
+        out = frequency.getName() + " " + when.getName() + " " + where.getName() + " " + this.name +" приносит "+  thing.getName()+ " и " ;
+    }
+
+    public void order(){
+        out = "велит выпить. ";
     }
 
     @Override
     public void describe() {
-        System.out.println(out);
+        System.out.print(out);
         out = "";
     }
 

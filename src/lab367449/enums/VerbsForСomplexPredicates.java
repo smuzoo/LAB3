@@ -1,13 +1,13 @@
-package lab367449.enums;
+/*package lab367449.enums;
 
-public enum Things {
-    SMELL("запаха"),
-    CUPOFMILK("чашку молока");
+public enum VerbsForСomplexPredicates {
 
+    DRINK("выпить"),
+    FIND("найти");
 
     private String name;
 
-     Things(String name) {
+    VerbsForСomplexPredicates(String name) {
         this.name = name;
     }
 
@@ -18,5 +18,5 @@ public enum Things {
     public String getName() {
         return this.name;
     }
-}
 
+}*/

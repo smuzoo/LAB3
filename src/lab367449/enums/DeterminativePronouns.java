@@ -5,7 +5,11 @@ public enum DeterminativePronouns {
     EACH("Каждый"),
     ANY("любой"),
     OTHER("другой"),
+    WITCH("которого"),
+    ONE("одного"),
     WHOLE("весь");
+
+
 
     private String name;
     DeterminativePronouns(String name){
