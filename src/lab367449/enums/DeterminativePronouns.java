@@ -7,7 +7,7 @@ public enum DeterminativePronouns {
     OTHER("другой"),
     WHOLE("весь");
 
-    public String name;
+    private String name;
     DeterminativePronouns(String name){
         this.name = name;
     }

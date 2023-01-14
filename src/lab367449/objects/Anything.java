@@ -14,9 +14,11 @@ public abstract class Anything implements Adverb {
     public String getName(){
         return this.name;
     }
+
+
     public void describe(){
 
         System.out.println(out);
-    };
+    }
 
 }

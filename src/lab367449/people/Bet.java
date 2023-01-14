@@ -1,8 +1,8 @@
 package lab367449.people;
 
-import people.speech.IDirectSpeech;
+import lab367449.people.speech.DirectSpeech;
 
-public class Bet extends Person implements IDirectSpeech {
+public class Bet extends Person implements DirectSpeech {
     public Bet(String name) {
         super(name);
     }
@@ -13,13 +13,13 @@ public class Bet extends Person implements IDirectSpeech {
     }
 
     @Override
-    public void asks (){
+    public void asks (String phrase){
         System.out.println("Спрашивала");
 
     }
 
     @Override
-    public void speak() {
+    public void speak(String phrase) {
 
     }
 }
