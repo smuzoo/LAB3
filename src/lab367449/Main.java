@@ -1,11 +1,7 @@
 package lab367449;
 
-import lab367449.enums.Adjectives;
-import lab367449.enums.DeterminativePronouns;
-import lab367449.enums.Things;
-import lab367449.enums.Time;
+import lab367449.enums.*;
 import lab367449.objects.Drinking;
-import lab367449.objects.Evening;
 import lab367449.people.Bet;
 import lab367449.people.Ghost;
 
@@ -14,7 +10,7 @@ public class Main {
 
         System.out.println("Танец с драконами. Искры над пеплом, Отрывок");
         Ghost ghost = new Ghost("призрак");
-        Bet bet = new Bet("Бэт");
+        Bet bet = new Bet("Бэт", "она");
         Drinking drinking = new Drinking("питья");
 
         ghost.bring(Things.CUPOFMILK,DeterminativePronouns.EACH, Time.EVENING, Time.DINNER);
@@ -24,6 +20,12 @@ public class Main {
         drinking.taste(Adjectives.STRANGE, Adjectives.BITTER);
         drinking.describe();
         bet.CantStand(DeterminativePronouns.WITCH);
+        bet.describe();
+        bet.Vomit(DeterminativePronouns.ONE, Things.SMELL);
+        bet.describe();
+        bet.Drink(Frequency.EVERYTIME, DeterminativePronouns.ALL, Adjectives.EVERYDROP);
+        bet.describe();
+        bet.asks(" «Долго мне еще быть слепой?»");
         bet.describe();
         ghost.speak("Пока тьма не станет для тебя столь же милой, как свет, или пока сама не попросишь. Попроси - и прозреешь");
         ghost.describe();

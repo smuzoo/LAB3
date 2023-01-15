@@ -1,8 +1,7 @@
 package lab367449.objects;
 
-import lab367449.interfaces.Adverb;
 
-public abstract class Anything implements Adverb {
+public abstract class Anything  {
     protected String name;
     String out = null;
     public Anything(String name){

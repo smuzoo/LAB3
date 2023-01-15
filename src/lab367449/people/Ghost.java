@@ -6,7 +6,7 @@ import lab367449.enums.Time;
 import lab367449.people.speech.DirectSpeech;
 
 public class Ghost  extends Person implements DirectSpeech {
-    public Ghost(String name) {
+    public Ghost(String name ) {
         super(name);
     }
 
@@ -30,8 +30,8 @@ public class Ghost  extends Person implements DirectSpeech {
     }
 
     @Override
-    public void speak(String pharse) {
-    out = "«" + pharse + "»";
+    public void speak(String phrase) {
+    out = "«" + phrase + "»";
 
     }
 }

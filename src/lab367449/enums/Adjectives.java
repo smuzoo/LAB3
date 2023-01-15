@@ -3,6 +3,7 @@ package lab367449.enums;
 public enum Adjectives {
     STRANGE("странный"),
     BLIND ("незрячей"),
+    EVERYDROP ("до капли"),
     BITTER("горький");
     private String name;
 

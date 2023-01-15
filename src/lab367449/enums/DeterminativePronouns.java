@@ -7,6 +7,7 @@ public enum DeterminativePronouns {
     OTHER("другой"),
     WITCH("которого"),
     ONE("одного"),
+    ALL("всё"),
     WHOLE("весь");
 
 
