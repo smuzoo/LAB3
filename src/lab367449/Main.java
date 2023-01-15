@@ -19,16 +19,18 @@ public class Main {
         ghost.describe();
         drinking.taste(Adjectives.STRANGE, Adjectives.BITTER);
         drinking.describe();
-        bet.CantStand(DeterminativePronouns.WITCH);
+        bet.cantStand(DeterminativePronouns.WITCH);
         bet.describe();
-        bet.Vomit(DeterminativePronouns.ONE, Things.SMELL);
+        bet.vomit(DeterminativePronouns.ONE, Things.SMELL);
         bet.describe();
-        bet.Drink(Frequency.EVERYTIME, DeterminativePronouns.ALL, Adjectives.EVERYDROP);
+        bet.drink(Frequency.EVERYTIME, DeterminativePronouns.ALL, Adjectives.EVERYDROP, Things.CUPOFMILK);
         bet.describe();
-        bet.asks(" «Долго мне еще быть слепой?»");
+        bet.asks(" «Долго мне еще быть слепой?» ");
         bet.describe();
         ghost.speak("Пока тьма не станет для тебя столь же милой, как свет, или пока сама не попросишь. Попроси - и прозреешь");
         ghost.describe();
+        bet.beg();
+        bet.describe();
 
     }
 }

@@ -1,28 +1,41 @@
 package lab367449.people;
 
-import lab367449.enums.Adjectives;
-import lab367449.enums.DeterminativePronouns;
-import lab367449.enums.Frequency;
-import lab367449.enums.Things;
+import lab367449.enums.*;
 import lab367449.people.speech.DirectSpeech;
+
+import static lab367449.enums.Things.CUPOFMILK;
 
 public class Bet extends Person implements DirectSpeech {
     String pronoun;
+    int vision;
+    int hearing;
     public Bet(String name, String pronoun) {
         super(name);
         this.pronoun = pronoun;
 
     }
 
-    public void CantStand (DeterminativePronouns witch){
+    public void cantStand(DeterminativePronouns witch){
         out = ", " + witch.getName() + " " + this.name +" не выносит, - ";
     }
-    public void Vomit(DeterminativePronouns witch, Things thing){
+    public void vomit(DeterminativePronouns witch, Things thing){
         out = " от " + witch.getName() + " " + thing.getName() + " " + this.pronoun + " начинает тошнить, -";
      }
 
-     public void  Drink (Frequency frequency, DeterminativePronouns witch, Adjectives adj){
+     public void drink(Frequency frequency, DeterminativePronouns witch, Adjectives adj, Things things){
         out = "но " + this.pronoun + " " + frequency.getName() + " выпивает " + witch.getName()+ " " + adj.getName() + " и ";
+         if (CUPOFMILK) {
+             vision = 0;
+             for (0 == vision; int i = 0; i++){
+                 hearing+
+             }
+         }
+
+
+     }
+
+     public void beg(){
+        out = " " + this.pronoun + " просит ";
      }
     @Override
     public void describe() {
