@@ -11,17 +11,22 @@ import static lab367449.enums.Things.CUPOFMILK;
 
 public class Bet extends Person implements DirectSpeech {
     String pronoun;
+    String partOfBody;
     private int countForBet = -1;
     protected int vision = 90;
     //от 1 до 100 и если больше 100, то ошибка
     protected int hearing = 70;
-    public Bet(String name, String pronoun) {
+    public Bet(String name, String pronoun, String partOfBody) {
         super(name);
         this.pronoun = pronoun;
+        this.partOfBody = partOfBody;
 
     }
     public String getPronoun(){
         return this.pronoun;
+    }
+    public  String getPartOfBody(){
+        return this.partOfBody;
     }
 
     public void cantStand(DeterminativePronouns witch){
@@ -59,6 +64,7 @@ public class Bet extends Person implements DirectSpeech {
              hearing++;
              countForBet = day.hashCode();
          }else {throw identical;}
+         out = "слух " + this.name + " улучшился";
 
 
      }
@@ -74,15 +80,15 @@ public class Bet extends Person implements DirectSpeech {
 
     }
     public void wakeUp(Time when, Frequency frequency, Adjectives adj){
-        out = when.getName() + " " + this.pronoun + " " + frequency.getName() + " проснулась " + adj.getName();
+        out = when.getName() + " " + this.pronoun + " " + frequency.getName() + " проснулась " + adj.getName() + ", ";
     }
 
     @Override
     public void asks (String phrase){
-        out = "спрашивает: " +  "«" + phrase + "» ";
+        out = "спрашивает: " +  " «" + phrase + "» ";
     }
 
     @Override
-    public void speak(String phrase) {out = "«" + phrase + "» ";
+    public void speak(String phrase) {out = " «" + phrase + "» ";
     }
 }

@@ -1,19 +1,24 @@
 package lab367449.enums;
 
 public enum Place {
-    Closet("каморку"),
-    Temple("Храм"),
-    Pond("пруд");
+    CLOSET("каморку"),
+    TEMPLE("в храм"),
+    UP("наверх"),
+    POND("пруд");
 
 
 
-    private final String describe;
-    Place(String describe) {
-        this.describe = describe;
+    private String name;
+
+    Place(String name) {
+        this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return describe;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

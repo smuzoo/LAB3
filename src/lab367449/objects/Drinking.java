@@ -1,12 +1,15 @@
 package lab367449.objects;
 
-import lab367449.enums.Adjectives;
-
-public class Drinking extends  Anything{
+public class Drinking extends AnythingReal {
     public Drinking(String name) {
         super(name);
     }
-    public void taste(Adjectives adj1, Adjectives adg2){
+
+    @Override
+    public void exist() {
+
+    }
+   /* public void taste(Adjectives adj1, Adjectives adg2){
         out = "У " + this.name + " " + adj1.getName() + " " + adg2.getName() + " вкус";
     }
 
@@ -15,5 +18,5 @@ public class Drinking extends  Anything{
         System.out.print(out);
         out = "";
 
-    }
+    }*/
 }

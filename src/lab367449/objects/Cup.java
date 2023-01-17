@@ -1,6 +1,6 @@
 package lab367449.objects;
 
-public class Cup extends Anything {
+public class Cup extends AnythingReal {
 
 
 
@@ -8,9 +8,8 @@ public class Cup extends Anything {
         super("чашку" );
     }
 
-
     @Override
-    public void describe() {
+    public void exist() {
 
     }
 }

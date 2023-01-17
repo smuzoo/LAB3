@@ -5,7 +5,7 @@ public class They extends Person  {
         super(name);
     }
     public void banish(Bet bet){
-        out = this.name + " " + "прогоняют " +bet.pronoun;
+        out = this.name + " " + "прогоняют " +bet.pronoun + " ";
     }
 
     @Override

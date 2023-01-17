@@ -4,7 +4,11 @@ public enum Adjectives {
     STRANGE("странный"),
     BLIND ("незрячей"),
     EVERYDROP ("до капли"),
+    THROUGH("сквозь"),
+    FIRST("первый"),
+    VERY("самый"),
     BITTER("горький");
+
     private String name;
 
     Adjectives(String name) {

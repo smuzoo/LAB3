@@ -1,10 +1,10 @@
 package lab367449.objects;
 
 
-public abstract class Anything  {
+public abstract class AnythingReal {
     protected String name;
-    String out = null;
-    public Anything(String name){
+
+    public AnythingReal(String name){
         this.name = name;
     }
     public void setName(String name){
@@ -13,8 +13,9 @@ public abstract class Anything  {
     public String getName(){
         return this.name;
     }
+    public abstract void exist();
 
-
-    public abstract void describe();
+/*    String out = null;
+    public abstract void describe();*/
 
 }
