@@ -8,6 +8,7 @@ public enum Time {
     NOW("Теперь"),
     INTHEDAYTIME("днем"),
     DAY("день"),
+    WHEN("когда"),
     BEFOREGOINGTOBED("перед сном");
 
 

@@ -20,6 +20,9 @@ public class Bet extends Person implements DirectSpeech {
         this.pronoun = pronoun;
 
     }
+    public String getPronoun(){
+        return this.pronoun;
+    }
 
     public void cantStand(DeterminativePronouns witch){
         out = ", " + witch.getName() + " " + this.name +" не выносит, - ";
@@ -28,10 +31,13 @@ public class Bet extends Person implements DirectSpeech {
         out = " от " + witch.getName() + " " + thing.getName() + " " + this.pronoun + " начинает тошнить, -";
      }
 
-     public void drink(Frequency frequency, DeterminativePronouns witch, Adjectives adj, Things things){
-        out = "но " + this.pronoun + " " + frequency.getName() + " выпивает " + witch.getName()+ " " + adj.getName() + " и ";
-         if (things == CUPOFMILK) {
+     public void drink(Frequency frequency, DeterminativePronouns witch, Adjectives adj,
+                       Things things1, Things things2, Adjectives adj1, Adjectives adg2, Things things3 ){
+        out = "у " + things2.getName() + " " + adj1.getName() + " "+ adg2.getName() + " "+ things3.getName() + " но " +
+                this.pronoun + " " + frequency.getName() + " выпивает " + witch.getName()+ " " + adj.getName() + " и ";
+         if (things1 == CUPOFMILK) {
              vision = 0;
+             out = "у " + things2.getName() + " " + adj1.getName() + " "+ adg2.getName() + " "+ things3.getName() + " но " + this.pronoun + " " + frequency.getName() + " выпивает " + witch.getName()+ " " + adj.getName() + " становиться слепой" + " и ";
          }
 
 
@@ -67,14 +73,16 @@ public class Bet extends Person implements DirectSpeech {
         out = "";
 
     }
-
-    @Override
-    public void asks (String phrase){
-        out = "спрашивает: " +  "«" + phrase + "»";
+    public void wakeUp(Time when, Frequency frequency, Adjectives adj){
+        out = when.getName() + " " + this.pronoun + " " + frequency.getName() + " проснулась " + adj.getName();
     }
 
     @Override
-    public void speak(String phrase) {
+    public void asks (String phrase){
+        out = "спрашивает: " +  "«" + phrase + "» ";
+    }
 
+    @Override
+    public void speak(String phrase) {out = "«" + phrase + "» ";
     }
 }

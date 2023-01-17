@@ -31,7 +31,7 @@ public class Ghost  extends Person implements DirectSpeech {
 
     @Override
     public void speak(String phrase) {
-    out = "«" + phrase + "»";
+    out = "«" + phrase + "» ";
 
     }
 }
