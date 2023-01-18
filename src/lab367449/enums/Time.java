@@ -6,8 +6,9 @@ public enum Time {
     DINNER ("За ужином"),
     EVENING("вечером"),
     NOW("Теперь"),
-    INTHEDAYTIME("днем"),
+    INTHEDAYTIME("Днем"),
     DAY("день"),
+    AFTER("потом"),
     WHEN("когда"),
     BEFOREGOINGTOBED("перед сном");
 

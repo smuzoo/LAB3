@@ -2,7 +2,8 @@ package lab367449.enums;
 
 public enum Place {
     CLOSET("каморку"),
-    TEMPLE("в храм"),
+    TEMPLE("храм"),
+    KITCHEN("кухню"),
     UP("наверх"),
     POND("пруд");
 

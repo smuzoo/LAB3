@@ -11,22 +11,26 @@ import static lab367449.enums.Things.CUPOFMILK;
 
 public class Bet extends Person implements DirectSpeech {
     String pronoun;
-    String partOfBody;
+    String partOfBody1;
+    String partOfBody2;
+    String partOfBody3;
     private int countForBet = -1;
     protected int vision = 90;
     //от 1 до 100 и если больше 100, то ошибка
     protected int hearing = 70;
-    public Bet(String name, String pronoun, String partOfBody) {
+    public Bet(String name, String pronoun, String partOfBody1, String partOfBody2, String partOfBody3) {
         super(name);
         this.pronoun = pronoun;
-        this.partOfBody = partOfBody;
+        this.partOfBody1 = partOfBody1;
+        this.partOfBody2 =partOfBody2;
+        this.partOfBody3 = partOfBody3;
 
     }
     public String getPronoun(){
         return this.pronoun;
     }
     public  String getPartOfBody(){
-        return this.partOfBody;
+        return this.partOfBody1;
     }
 
     public void cantStand(DeterminativePronouns witch){
@@ -62,12 +66,24 @@ public class Bet extends Person implements DirectSpeech {
          }
          if(countForBet < day.hashCode()) {
              hearing++;
+             out = "слух " + this.name + " улучшился";
              countForBet = day.hashCode();
          }else {throw identical;}
-         out = "слух " + this.name + " улучшился";
-
 
      }
+     public  void  burn(Frequency frequency){
+        out = this.getName() + " " + frequency.getName() + " обжигала " + this.partOfBody2 + " " + this.partOfBody3;
+     }
+
+     public void  understand(Languages languages, Adjectives adg1){
+        out = languages.getName() + " " + this.name + " " + adg1.getName() + " понимала ";
+
+     }
+
+     public void getRidOf(Adjectives adj1, Adjectives adj2, Things things ){
+        out = " и " + adj1.getName() + " избавилась от " + adj2.getName() + " "+ things.getName();
+     }
+
 
 
      public void beg(){
@@ -81,6 +97,35 @@ public class Bet extends Person implements DirectSpeech {
     }
     public void wakeUp(Time when, Frequency frequency, Adjectives adj){
         out = when.getName() + " " + this.pronoun + " " + frequency.getName() + " проснулась " + adj.getName() + ", ";
+    }
+    public void scream(Frequency frequency, Things things){
+        out = frequency.getName() + " " + this.name + " визжала с " + things.getName();
+    }
+
+    public void learn(Time time,Things things1, Things things2, Things things3){
+        out = time.getName() + " " + this.pronoun + " научилась слышать "+ things1.getName() + " чувствовать по " + things2.getName() + " "+ things3.getName();
+    }
+    public void keep(Things things){
+        out = " " + this.pronoun + " сохраняла " + things.getName();
+    }
+    public void bumpInto (Things things1, Things things2){
+        out = " " + this.pronoun + " натыкалась на " + things1.getName() + " " + things2.getName();
+    }
+    public  void drop(Things things){
+        out = " роняла" + things.getName();
+    }
+    public void wander(Place place, Adjectives adjectives){
+        out = " блуждала по " + place.getName() + " " + adjectives.getName();
+    }
+
+    public void feel(Time time, Things things1, Things things2){
+        out = " " + time.getName() + " " + this.pronoun + " ощущала " + things1.getName()+ " " + things2.getName();
+    }
+    public void find(Things things, Place place){
+        out = " находила " + place.getName() + " по " + things.getName();
+    }
+    public void foundOut(Umma umma, Things things,Servants servants, Novices novices, Ghost ghost, KindMan kindMan){
+     out = " узнавала по "+ things.getName() +" "+  umma.getName() +" "+ servants.getName() + " "+ novices.getName() + " но не " + ghost.getName() + " и "+ kindMan.getName() + "которые ходили совершенно бесшумно.";
     }
 
     @Override

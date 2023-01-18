@@ -2,6 +2,7 @@ package lab367449.enums;
 
 public enum Frequency {
     FIRSTTIME("впервые"),
+    ATFIRST("поначалу"),
     EVERYTIME("каждый раз");
     private String name;
     Frequency(String name){

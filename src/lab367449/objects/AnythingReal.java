@@ -3,6 +3,7 @@ package lab367449.objects;
 
 public abstract class AnythingReal {
     protected String name;
+    protected String out_thing = null;
 
     public AnythingReal(String name){
         this.name = name;
@@ -13,7 +14,9 @@ public abstract class AnythingReal {
     public String getName(){
         return this.name;
     }
-    public abstract void exist();
+    public abstract void exist(
+
+    );
 
 /*    String out = null;
     public abstract void describe();*/
